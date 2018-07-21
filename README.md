@@ -9,4 +9,4 @@ A script I use to clear out the windows SoftwareDistribution folder. This can he
 removing the already downloaded update files.
 
 HIBP:
-A script that uses the Have I Been Pwned API made available by Troy Hunt (github.com/TroyHunt) to check if the email you've entered has been found in a data breach dump. Right now it just checks for data breaches using the API.
+A script that uses the Have I Been Pwned API made available by Troy Hunt (https://github.com/TroyHunt) to check if the email you've entered has been found in a data breach dump. Right now it just checks for data breaches using the API.
