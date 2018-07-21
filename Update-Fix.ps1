@@ -32,9 +32,7 @@ if(checkServicesStatus -eq $true){
     Write-Host "SoftwareDistribution folder Successfully deleted"
     #restart services to be nice
     Start-Service BITS
-    Start-Service wuauserv 
+    Start-Service wuauserv
     Start-Service UsoSvc
     Start-Service DoSvc
 }
-
-
