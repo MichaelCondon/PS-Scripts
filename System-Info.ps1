@@ -39,4 +39,7 @@ Write-Output "---------------";
 Write-Output "PC Name: $csname";
 Write-Output "Windows SKU: $pcCaption";
 Write-Output "Service Pack: $servicePack";
+
+
+
 Write-Output "Your PC is running Windows build $version";
