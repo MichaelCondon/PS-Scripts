@@ -8,12 +8,12 @@
 Write-Host "This script will manipulate registry values to downgrade your version of Windows 10 Pro to Windows 10 Home"
 Write-Host "Please only use this script if you have a valid license for Windows 10 Home, otherwise windows will not reactivate"
 Write-Host "This script was created 17/5/19, I can't guarantee it will work in the future, this is just how windows works right now"
-Write-Host "Once this script succesfully runs, please run an upgrade install from a windows image, either the same version or a newer version than what you are currently running"
-Read-Host "Please press enter to continue, if you are unsure, simply close the script" -ForegroundColor "red"
+Write-Host "Once this script succesfully runs, please run an upgrade install from a windows image, either the same version or a newer version than what you are currently running" -ForegroundColor "red"
+Read-Host "Please press enter to continue, if you are unsure, simply close the script" 
 
 
 Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'CompositionEditionID' -Value 'Core'
-Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'Edition ID' -Value 'Core'
+Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'EditionID' -Value 'Core'
 Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'InstallationID' -Value 'Client'
 Set-Itemproperty -path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion' -Name 'ProductName' -Value 'Windows 10 Home'
 #You have to change these valus in two locations, I guess.
