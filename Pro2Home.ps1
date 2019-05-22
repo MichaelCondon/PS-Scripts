@@ -3,7 +3,7 @@
 #After you run this, run an upgrade install via a windows image matching your version of windows, and voila!
 #This script was created 17/5/19, I can't guarentee it will work in the future, this is just how windows works right now
 
-#Written by Michael Condon
+#Written by Michael Condon, I learned how to do this from Simon Calabrese
 
 Write-Host "This script will manipulate registry values to downgrade your version of Windows 10 Pro to Windows 10 Home"
 Write-Host "Please only use this script if you have a valid license for Windows 10 Home, otherwise windows will not reactivate"
